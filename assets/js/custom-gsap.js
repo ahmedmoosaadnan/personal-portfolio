@@ -56,6 +56,16 @@
       normalizeScroll: false,
       ignoreMobileResize: true,
     });
+    ScrollTrigger.addEventListener("refresh", function () {
+      if (typeof AOS !== "undefined") {
+        AOS.refresh();
+      }
+    });
+    ScrollTrigger.addEventListener("scrollEnd", function () {
+      if (typeof AOS !== "undefined") {
+        AOS.refresh();
+      }
+    });
     if (typeof AOS !== "undefined") {
       AOS.refresh();
     }
