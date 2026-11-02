@@ -1,0 +1,1653 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Ahmed Moosa - Full-Stack & AI Developer, Founder of Devoxis (AI automation & software development agency). Building full-stack web apps, AI agents, chatbots, SaaS platforms, and workflow automations (n8n, Make, Zapier)."
+    />
+    <meta
+      name="keywords"
+      content="React, Next.js, Node.js, Express, MongoDB, PostgreSQL, REST APIs, OpenAI integration, AI chatbots, AI agents, n8n, Make, Zapier, automation"
+    />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ahmed Moosa — Full-Stack & AI Developer | Founder, Devoxis" />
+    <meta property="og:description" content="Full-Stack & AI Developer and Founder of Devoxis (AI automation & software agency). Building full-stack web applications, AI agents & chatbots, SaaS platforms, and workflow automations." />
+    <meta property="og:image" content="assets/images/moosa-hero-cutout.png" />
+    <!-- Title -->
+    <title>Ahmed Moosa — Full-Stack & AI Developer | Founder, Devoxis</title>
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='12' fill='%230A76DB'/%3E%3C/svg%3E" type="image/svg+xml" />
+    <!-- Google Fonts: Inter 700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Swiper Bundle -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!-- aos -->
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    
+    <!-- Responsive Custom Tweaks -->
+    <style>
+      html, body {
+        overflow-x: hidden;
+        width: 100%;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      /* Hero banner responsiveness */
+      @media (max-width: 991px) {
+        .banner-three-thumb {
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          text-center: center;
+        }
+        .banner-three-thumb img {
+          max-height: 450px;
+          object-fit: contain;
+        }
+        .tw-container-1800-px {
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+        }
+        .about-three-counter {
+          margin-top: 1.5rem;
+        }
+        .footer-three-area {
+          padding-top: 60px !important;
+        }
+      }
+      @media (max-width: 575px) {
+        .banner-three-thumb img {
+          max-height: 320px;
+        }
+        .tw-main-menu-mobile a {
+          font-size: 1.4rem !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="tw-magic-cursor">
+    <!--==================== Preloader Start ====================-->
+    <div class="preloader">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path
+          id="preloaderSvg"
+          d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"
+        ></path>
+      </svg>
+      <div class="preloader-heading">
+        <div class="load-text">
+          <span>M</span>
+          <span>O</span>
+          <span>O</span>
+          <span>S</span>
+          <span>A</span>
+        </div>
+      </div>
+    </div>
+    <!--==================== Preloader End ====================-->
+
+    <!--==================== Overlay Start ====================-->
+    <div class="overlay"></div>
+    <!--==================== Overlay End ====================-->
+
+    <!--==================== Sidebar Overlay End ====================-->
+    <div class="side-overlay"></div>
+    <!--==================== Sidebar Overlay End ====================-->
+
+    <!--==================== Begin Magic Cursor Start ====================-->
+    <div id="magic-cursor">
+      <div id="ball"></div>
+    </div>
+    <!--==================== Begin Magic Cursor End ====================-->
+
+    <!-- Custom Toast Message start -->
+    <div id="toast-container"></div>
+    <!-- Custom Toast Message End -->
+
+    <!-- ==================== Scroll to Top End Here ==================== -->
+    <div class="back-to-top-wrapper">
+      <button id="back_to_top" type="button" class="back-to-top-btn">
+        <svg
+          width="12"
+          height="7"
+          viewBox="0 0 12 7"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 6L6 1L1 6"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+    <!-- ==================== Scroll to Top End Here ==================== -->
+
+    <!-- ==================== Offcanvus Mobile Menu Start Here ==================== -->
+    <div class="tw-offcanvas-2-area p-relative">
+      <div class="tw-offcanvas-2-bg is-left left-box"></div>
+      <div class="tw-offcanvas-2-bg is-right right-box d-none d-md-block"></div>
+      <div class="tw-offcanvas-2-wrapper">
+        <div class="tw-offcanvas-2-left left-box">
+          <div
+            class="tw-offcanvas-2-left-wrap d-flex justify-content-between align-items-center"
+          >
+            <div class="twoffcanvas__logo">
+              <a class="dvx-logo dvx-logo--on-dark" href="index.html" aria-label="Devoxis Home">
+                <span class="dvx-logo__dot" aria-hidden="true"></span>
+                <span class="dvx-logo__text"><span class="dvx-logo__dev">DEV</span><span class="dvx-logo__oxis">OXIS</span></span>
+              </a>
+            </div>
+            <div class="tw-offcanvas-2-close d-md-none text-end">
+              <button class="tw-offcanvas-2-close-btn tw-offcanvas-2-close-btn">
+                <span class="text">
+                  <span class="text-white">close</span>
+                </span>
+                <span class="d-inline-block">
+                  <span>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        width="32.621"
+                        height="1.00918"
+                        transform="matrix(0.704882 0.709325 -0.704882 0.709325 1.0061 0)"
+                        fill="currentcolor"
+                      />
+                      <rect
+                        width="32.621"
+                        height="1.00918"
+                        transform="matrix(0.704882 -0.709325 0.704882 0.709325 0 23.2842)"
+                        fill="currentcolor"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="tw-main-menu-mobile tw-mt-8">
+            <nav>
+              <ul class="d-flex flex-column tw-gap-5 list-unstyled tw-mb-0">
+                <li><a href="#about" class="text-white text-uppercase fw-bold hover-text-main-two-600 tw-transition-3" style="color: #ffffff !important; font-size: 1.8rem; font-weight: 700; text-decoration: none; display: inline-block; white-space: nowrap;">About</a></li>
+                <li><a href="#expertise" class="text-white text-uppercase fw-bold hover-text-main-two-600 tw-transition-3" style="color: #ffffff !important; font-size: 1.8rem; font-weight: 700; text-decoration: none; display: inline-block; white-space: nowrap;">Core Expertise</a></li>
+                <li><a href="#projects" class="text-white text-uppercase fw-bold hover-text-main-two-600 tw-transition-3" style="color: #ffffff !important; font-size: 1.8rem; font-weight: 700; text-decoration: none; display: inline-block; white-space: nowrap;">Projects</a></li>
+                <li><a href="#what-i-build" class="text-white text-uppercase fw-bold hover-text-main-two-600 tw-transition-3" style="color: #ffffff !important; font-size: 1.8rem; font-weight: 700; text-decoration: none; display: inline-block; white-space: nowrap;">What I Build</a></li>
+                <li><a href="#contact" class="text-white text-uppercase fw-bold hover-text-main-two-600 tw-transition-3" style="color: #ffffff !important; font-size: 1.8rem; font-weight: 700; text-decoration: none; display: inline-block; white-space: nowrap;">Connect</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div
+          class="tw-offcanvas-2-right right-box d-none d-md-block p-relative"
+        >
+          <div class="tw-offcanvas-2-close text-end">
+            <button class="tw-offcanvas-2-close-btn">
+              <span class="text">
+                <span>close</span>
+              </span>
+              <span class="d-inline-block">
+                <span>
+                  <svg
+                    width="38"
+                    height="38"
+                    viewBox="0 0 38 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.80859 9.80762L28.1934 28.1924"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.80859 28.1924L28.1934 9.80761"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </div>
+          <div
+            class="tw-offcanvas-2-right-inner d-flex flex-column justify-content-between h-100"
+          >
+            <div class="twoffcanvas__contact-info">
+              <div class="twoffcanvas__contact-title">
+                <h5 class="text-white tw-mb-1">Ahmed Moosa</h5>
+                <p class="text-neutral-400 tw-text-sm tw-mb-4">Full-Stack & AI Developer · Founder, Devoxis</p>
+              </div>
+              <div class="twoffcanvas__social-info tw-mt-4">
+                <h6 class="text-white tw-mb-3">Connect Across Platforms</h6>
+                <ul class="d-flex flex-wrap tw-gap-3 list-unstyled">
+                  <li>
+                    <!-- TODO: Replace href="#" with actual Upwork profile URL -->
+                    <a class="tw-text-sm text-white bg-main-two-600 border border-main-two-600 tw-px-3 tw-py-2 tw-rounded-md d-inline-flex align-items-center tw-gap-2 hover-bg-neutral-900 hover-text-white tw-transition-3" href="#">
+                      <i class="ph ph-briefcase"></i> View my work on Upwork
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tw-text-sm text-white border border-neutral-700 tw-px-3 tw-py-2 tw-rounded-md d-inline-flex align-items-center tw-gap-2 hover-bg-main-two-600 hover-text-white tw-transition-3" href="https://github.com/ahmedmoosaadnan" target="_blank" rel="noopener noreferrer">
+                      <i class="ph ph-github-logo"></i> GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tw-text-sm text-white border border-neutral-700 tw-px-3 tw-py-2 tw-rounded-md d-inline-flex align-items-center tw-gap-2 hover-bg-main-two-600 hover-text-white tw-transition-3" href="https://www.linkedin.com/in/ahmed-moosa-adnan" target="_blank" rel="noopener noreferrer">
+                      <i class="ph ph-linkedin-logo"></i> LinkedIn
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==================== Offcanvus Mobile Menu End Here ==================== -->
+
+    <!-- ==================== Header Start Here ==================== -->
+    <header
+      class="header header-two header-three tw-transition-all tw-z-99 position-relative"
+    >
+      <div class="container tw-container-1800-px">
+        <nav
+          class="d-flex align-items-center justify-content-between position-relative"
+        >
+          <!-- Logo Start -->
+          <div class="header-three-logo tw-rounded-md">
+            <a class="dvx-logo" href="index.html" aria-label="Devoxis Home">
+              <span class="dvx-logo__dot" aria-hidden="true"></span>
+              <span class="dvx-logo__text"><span class="dvx-logo__dev">DEV</span><span class="dvx-logo__oxis">OXIS</span></span>
+            </a>
+          </div>
+          <!-- Logo End  -->
+
+          <!-- Quick Navigation Links Start -->
+          <div class="header-menu d-none d-lg-block">
+            <div class="main-menu">
+              <nav class="tw-main-menu-content">
+                <ul class="d-flex tw-gap-8 list-unstyled tw-mb-0 align-items-center">
+                  <li><a href="#about" class="text-black fw-bold text-decoration-none tw-text-lg hover-text-main-two-600" style="color: #111111 !important; font-size: 1.1rem; font-weight: 700;">About</a></li>
+                  <li><a href="#expertise" class="text-black fw-bold text-decoration-none tw-text-lg hover-text-main-two-600" style="color: #111111 !important; font-size: 1.1rem; font-weight: 700;">Expertise</a></li>
+                  <li><a href="#projects" class="text-black fw-bold text-decoration-none tw-text-lg hover-text-main-two-600" style="color: #111111 !important; font-size: 1.1rem; font-weight: 700;">Projects</a></li>
+                  <li><a href="#what-i-build" class="text-black fw-bold text-decoration-none tw-text-lg hover-text-main-two-600" style="color: #111111 !important; font-size: 1.1rem; font-weight: 700;">What I Build</a></li>
+                  <li><a href="#contact" class="text-black fw-bold text-decoration-none tw-text-lg hover-text-main-two-600" style="color: #111111 !important; font-size: 1.1rem; font-weight: 700;">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!-- Navigation Links End -->
+
+          <!-- Header Right start -->
+          <div class="header-right d-flex align-items-center tw-gap-705">
+            <!-- Menu Button Start  -->
+            <div class="header-three-menu">
+              <button
+                class="tw-offcanvas-open-btn tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center tw-transition-3 tw-rounded-md"
+              >
+                <span
+                  ><img
+                    class="tw-transition-3"
+                    src="assets/images/icons/header-three-toggle.svg"
+                    alt="toggle"
+                    width="18"
+                    height="18"
+                /></span>
+              </button>
+            </div>
+            <!-- Menu Button End  -->
+
+            <!-- Header Button Start  -->
+            <div class="header-three-button d-none d-md-block">
+              <a
+                class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-md"
+                href="#contact"
+              >
+                Let's Talk
+                <span class="tw-hover-btn-circle-dot bg-main-two-600"></span>
+              </a>
+            </div>
+            <!-- Header Button End  -->
+          </div>
+
+          <!-- Header Right End  -->
+        </nav>
+      </div>
+    </header>
+    <!-- ==================== Header End Here ==================== -->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <!-- Banner / Hero Section -->
+        <section class="banner-three-area">
+          <div class="container tw-container-1800-px">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="banner-three-wrapper position-relative z-1">
+                  <div
+                    class="banner-three-man position-absolute start-50 translate-middle-x"
+                  >
+                    <img
+                      src="assets/images/moosa-hero-cutout.png"
+                      alt="Ahmed Moosa, Full-Stack & AI Developer"
+                      width="1200"
+                      height="1600"
+                    />
+                  </div>
+                  <div class="tw-mb-2">
+                    <span class="d-inline-block text-main-two-600 bg-white border border-neutral-200 tw-px-4 tw-py-1 tw-rounded-md fw-bold text-uppercase tracking-wider tw-text-sm">Founder, Devoxis</span>
+                  </div>
+                  <h1 class="banner-three-title text-black tw-mb-30 text-uppercase">
+                    MOOSA
+                  </h1>
+                  <div
+                    class="banner-three-wrap d-flex justify-content-between align-items-end position-relative z-1"
+                  >
+                    <div
+                      class="banner-three-left tw-rounded-lg"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <h2 class="banner-three-left-title tw-text-3xl tw-mb-6">
+                        Hi, I'm Ahmed Moosa <br />
+                        <span class="text-main-two-600">Full-Stack & AI Developer</span>
+                      </h2>
+                      <div class="banner-three-list">
+                        <ul>
+                          <li
+                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
+                          >
+                            <span
+                              ><img
+                                src="assets/images/icons/banner-three-pluse.svg"
+                                alt="plus"
+                                width="18"
+                                height="18"
+                            /></span>
+                            Full-Stack Web Apps (React & Next.js)
+                          </li>
+                          <li
+                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
+                          >
+                            <span
+                              ><img
+                                src="assets/images/icons/banner-three-pluse.svg"
+                                alt="plus"
+                                width="18"
+                                height="18"
+                            /></span>
+                            Node.js, Express, MongoDB & PostgreSQL
+                          </li>
+                          <li
+                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
+                          >
+                            <span
+                              ><img
+                                src="assets/images/icons/banner-three-pluse.svg"
+                                alt="plus"
+                                width="18"
+                                height="18"
+                            /></span>
+                            AI Agents, Chatbots & OpenAI Integration
+                          </li>
+                          <li
+                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
+                          >
+                            <span
+                              ><img
+                                src="assets/images/icons/banner-three-pluse.svg"
+                                alt="plus"
+                                width="18"
+                                height="18"
+                            /></span>
+                            Workflow Automation (n8n, Make & Zapier)
+                          </li>
+                          <li
+                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
+                          >
+                            <span
+                              ><img
+                                src="assets/images/icons/banner-three-pluse.svg"
+                                alt="plus"
+                                width="18"
+                                height="18"
+                            /></span>
+                            SaaS Platforms & REST APIs
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-three-center text-center"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <h3 class="banner-three-center-title tw-text-120">
+                        Building full-stack web apps, AI agents & workflow automations.
+                      </h3>
+                      <div class="banner-three-button">
+                        <a
+                          class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-lg"
+                          href="#projects"
+                        >
+                          explore projects
+                          <span
+                            class="tw-hover-btn-circle-dot bg-main-two-600"
+                          ></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-three-right tw-rounded-lg"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="300"
+                    >
+                      <div
+                        class="banner-three-counter-item tw-rounded-md tw-mb-4 position-relative"
+                      >
+                        <h4
+                          class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"
+                        >
+                          Devoxis
+                        </h4>
+                        <p
+                          class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
+                        >
+                          Founder · AI Automation & Software Agency
+                        </p>
+                      </div>
+                      <div
+                        class="banner-three-counter-item tw-rounded-md tw-mb-4 ms-auto bg-black"
+                      >
+                        <h4
+                          class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-white tw-mb-2 lh-1"
+                        >
+                          BS CS
+                        </h4>
+                        <p
+                          class="banner-three-counter-paragraph tw-text-lg fw-medium text-white"
+                        >
+                          Computer Science Graduate (2026)
+                        </p>
+                      </div>
+                      <div
+                        class="banner-three-counter-item tw-rounded-md tw-mb-4"
+                      >
+                        <h4
+                          class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"
+                        >
+                          Full-Stack & AI
+                        </h4>
+                        <p
+                          class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
+                        >
+                          Web Apps, AI Agents & Automation
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-three-line-shape position-absolute start-50 translate-middle-x z-n1"
+                    >
+                      <img
+                        src="assets/images/shapes/banner-three-shape.png"
+                        alt="shape"
+                        width="1770"
+                        height="180"
+                      />
+                      <div class="banner-three-carcel-shape">
+                        <div><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-three-area py-120 position-relative z-1">
+          <div class="container tw-container-1800-px">
+            <div class="about-three-top position-relative z-1">
+              <div class="row justify-content-center tw-mb-21">
+                <div class="col-xl-10">
+                  <div class="text-center">
+                    <h2
+                      class="about-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim"
+                    >
+                      Building full-stack web applications, intelligent AI agents, and automated workflows that streamline operations and scale products.
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-6">
+                  <div
+                    class="about-three-thumb w-100 tw-clip-anim tw-rounded-lg"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <img
+                      class="tw-anim-img w-100 tw-rounded-lg"
+                      data-animate="true"
+                      src="assets/images/moosa-about.jpg"
+                      alt="Ahmed Moosa, Full-Stack & AI Developer"
+                      width="1000"
+                      height="1250"
+                      loading="lazy"
+                      style="object-fit: cover; max-height: 650px;"
+                    />
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div
+                    class="about-three-right"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                  >
+                    <div>
+                      <p class="tw-text-xl tw-mb-8">
+                        Hi, I'm <strong>Ahmed Moosa</strong> (Moosa), a Full-Stack & AI Developer and Founder of <strong>Devoxis</strong>, an AI automation and software development agency.
+                      </p>
+                      <p class="tw-text-xl tw-mb-8">
+                        I hold a BS in Computer Science (2026) and bring several years of freelance full-stack development experience working with clients to design, build, and deploy modern software solutions.
+                      </p>
+                      <p class="tw-text-xl tw-mb-10">
+                        My work focuses on building full-stack web applications, custom AI agents and chatbots, SaaS platforms and dashboards, and end-to-end workflow automations (n8n, Make, Zapier).
+                      </p>
+                    </div>
+                    <div class="about-three-counter d-inline-block">
+                      <div class="tw-hover-btn-wrapper d-inline-block">
+                        <a
+                          class="tw-btn-circle tw-hover-btn-item tw-hover-btn lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden border border-1 border-neutral-200"
+                          style="width: 110px !important; height: 110px !important;"
+                          href="#contact"
+                        >
+                          <span
+                            class="d-flex flex-column justify-content-center text-center p-1"
+                          >
+                            <span
+                              class="text-heading fw-bold text-uppercase"
+                              style="font-size: 0.75rem; line-height: 1.1; font-weight: 700; display: block;"
+                              >Build Your</span
+                            >
+                            <span
+                              class="text-main-two-600 fw-bold text-uppercase"
+                              style="font-size: 0.75rem; line-height: 1.1; font-weight: 700; display: block;"
+                              >Product <i class="ph ph-arrow-up-right"></i></span
+                            >
+                          </span>
+                          <i class="tw-btn-circle-dot bg-main-two-600"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="about-three-wrap-shape d-flex justify-content-between tw-mt-12"
+              >
+                <div
+                  class="banner-three-counter-item tw-rounded-md position-relative"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  <h2
+                    class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"
+                  >
+                    Full-Stack Web
+                  </h2>
+                  <p
+                    class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
+                  >
+                    React, Next.js, Node.js, Express, MongoDB, PostgreSQL, REST APIs
+                  </p>
+                </div>
+                <div
+                  class="banner-three-counter-item tw-rounded-md position-relative"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
+                  <h2
+                    class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"
+                  >
+                    AI & Automation
+                  </h2>
+                  <p
+                    class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
+                  >
+                    OpenAI, AI Agents, Chatbots, n8n, Make, Zapier
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="about-three-shape position-absolute start-0 w-100"
+              src="assets/images/shapes/about-three-shape.png"
+              alt="shape"
+              width="1920"
+              height="183"
+              loading="lazy"
+            />
+          </div>
+        </section>
+
+        <!-- ======================== Marquee section start =========================== -->
+        <div class="marquee tw-pt-17 bg-black">
+          <div
+            class="marquee_left d-flex align-items-center justify-content-between tw-gap-16 overflow-hidden"
+          >
+            <div>
+              <h2
+                class="marquee-two-title marquee-three-title text-uppercase text-white"
+              >
+                FULL-STACK WEB APPS <span class="text-white">-</span>
+              </h2>
+            </div>
+            <div>
+              <h2
+                class="marquee-two-title marquee-three-title text-uppercase text-stroke"
+              >
+                AI AGENTS & CHATBOTS <span class="text-white">-</span>
+              </h2>
+            </div>
+            <div>
+              <h2
+                class="marquee-two-title marquee-three-title text-uppercase text-white"
+              >
+                WORKFLOW AUTOMATION <span class="text-white">-</span>
+              </h2>
+            </div>
+            <div>
+              <h2
+                class="marquee-two-title marquee-three-title text-uppercase text-stroke"
+              >
+                SAAS PLATFORMS & DASHBOARDS <span class="text-white">-</span>
+              </h2>
+            </div>
+            <div>
+              <h2
+                class="marquee-two-title marquee-three-title text-uppercase text-white"
+              >
+                DEVOXIS AGENCY <span class="text-white">-</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <!-- ======================== Marquee section end =========================== -->
+
+        <!-- Core Expertise Section -->
+        <section id="expertise" class="service-three-area bg-black pt-120 tw-pb-15">
+          <div class="container tw-container-1800-px">
+            <div class="row">
+              <div class="col-12">
+                <div class="tw-mb-15">
+                  <h2 class="text-white tw-text-15 text-center font-heading">Core Expertise</h2>
+                </div>
+                <div class="service-three-wrapper">
+                  <!-- 01. Frontend Engineering -->
+                  <div
+                    class="service-three-single"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="service-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div>
+                          <span
+                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
+                            >01
+                            <img
+                              class="tw-transition-3"
+                              src="assets/images/icons/service-three-arrow.svg"
+                              alt="arrow"
+                              width="45"
+                              height="9"
+                              loading="lazy"
+                          /></span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2
+                              class="service-three-title tw-text-15 text-white tw-mb-4"
+                            >
+                              <a href="#expertise">Frontend Engineering</a>
+                            </h2>
+                          </div>
+                          <div class="portfolio-list portfolio-two-list">
+                            <ul class="d-flex tw-gap-205 flex-wrap">
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">React</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">Next.js</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">JavaScript (ES6+)</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">TypeScript</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">HTML5 & CSS3</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">Tailwind CSS</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="service-three-thumb">
+                        <img
+                          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2338bdf8'/%3E%3Cstop offset='100%25' stop-color='%230A76DB'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='18' y='24' width='84' height='72' rx='14' fill='url(%23g1)' opacity='0.18' stroke='%230A76DB' stroke-width='2'/%3E%3Cpath d='M46 50L34 62L46 74M74 50L86 62L74 74M64 46L56 78' stroke='%2338bdf8' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E"
+                          alt="Frontend Engineering"
+                          width="120"
+                          height="120"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 02. Backend & Databases -->
+                  <div
+                    class="service-three-single ms-auto"
+                    data-aos="fade-left"
+                    data-aos-duration="2000"
+                    data-aos-delay="300"
+                  >
+                    <div
+                      class="service-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div>
+                          <span
+                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
+                            >02
+                            <img
+                              class="tw-transition-3"
+                              src="assets/images/icons/service-three-arrow.svg"
+                              alt="arrow"
+                              width="45"
+                              height="9"
+                              loading="lazy"
+                          /></span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2
+                              class="service-three-title tw-text-15 text-white tw-mb-4"
+                            >
+                              <a href="#expertise">Backend & Databases</a>
+                            </h2>
+                          </div>
+                          <div class="portfolio-list portfolio-two-list">
+                            <ul class="d-flex tw-gap-205 flex-wrap">
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">Node.js</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">Express</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">MongoDB</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">PostgreSQL</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">REST APIs</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="service-three-thumb">
+                        <img
+                          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cdefs%3E%3ClinearGradient id='g2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2338bdf8'/%3E%3Cstop offset='100%25' stop-color='%230A76DB'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='60' cy='60' r='38' fill='url(%23g2)' opacity='0.18' stroke='%230A76DB' stroke-width='2'/%3E%3Ccircle cx='48' cy='56' r='5' fill='%2338bdf8'/%3E%3Ccircle cx='72' cy='56' r='5' fill='%2338bdf8'/%3E%3Cpath d='M46 72C50 77 70 77 74 72M60 22V32M32 42L24 36M88 42L96 36' stroke='%2338bdf8' stroke-width='4' stroke-linecap='round' fill='none'/%3E%3C/svg%3E"
+                          alt="Backend & Databases"
+                          width="120"
+                          height="120"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 03. AI & Automation Solutions -->
+                  <div
+                    class="service-three-single"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                    data-aos-delay="400"
+                  >
+                    <div
+                      class="service-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div>
+                          <span
+                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
+                            >03
+                            <img
+                              class="tw-transition-3"
+                              src="assets/images/icons/service-three-arrow.svg"
+                              alt="arrow"
+                              width="45"
+                              height="9"
+                              loading="lazy"
+                          /></span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2
+                              class="service-three-title tw-text-15 text-white tw-mb-4"
+                            >
+                              <a href="#expertise">AI & Automation Solutions</a>
+                            </h2>
+                          </div>
+                          <div class="portfolio-list portfolio-two-list">
+                            <ul class="d-flex tw-gap-205 flex-wrap">
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">OpenAI Integration</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">AI Chatbots</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">AI Agents</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">n8n</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">Make</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">Zapier</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">WhatsApp Automation</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="service-three-thumb">
+                        <img
+                          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cdefs%3E%3ClinearGradient id='g3' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2338bdf8'/%3E%3Cstop offset='100%25' stop-color='%230A76DB'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='34' cy='40' r='12' fill='url(%23g3)' opacity='0.25' stroke='%2338bdf8' stroke-width='3'/%3E%3Ccircle cx='86' cy='40' r='12' fill='url(%23g3)' opacity='0.25' stroke='%2338bdf8' stroke-width='3'/%3E%3Ccircle cx='60' cy='84' r='12' fill='url(%23g3)' opacity='0.25' stroke='%230A76DB' stroke-width='3'/%3E%3Cpath d='M46 40H74M40 50L54 74M80 50L66 74' stroke='%230A76DB' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E"
+                          alt="AI & Automation Solutions"
+                          width="120"
+                          height="120"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 04. Product Capabilities & Platforms -->
+                  <div
+                    class="service-three-single ms-auto"
+                    data-aos="fade-left"
+                    data-aos-duration="2000"
+                    data-aos-delay="500"
+                  >
+                    <div
+                      class="service-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div>
+                          <span
+                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
+                            >04
+                            <img
+                              class="tw-transition-3"
+                              src="assets/images/icons/service-three-arrow.svg"
+                              alt="arrow"
+                              width="45"
+                              height="9"
+                              loading="lazy"
+                          /></span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2
+                              class="service-three-title tw-text-15 text-white tw-mb-4"
+                            >
+                              <a href="#expertise">Product Capabilities & Platforms</a>
+                            </h2>
+                          </div>
+                          <div class="portfolio-list portfolio-two-list">
+                            <ul class="d-flex tw-gap-205 flex-wrap">
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">Full-Stack Web Apps</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">SaaS Platforms</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">Dashboards</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">API Integrations</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">Business Websites</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="service-three-thumb">
+                        <img
+                          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cdefs%3E%3ClinearGradient id='g4' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2338bdf8'/%3E%3Cstop offset='100%25' stop-color='%230A76DB'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='22' y='24' width='76' height='72' rx='12' fill='url(%23g4)' opacity='0.18' stroke='%230A76DB' stroke-width='2.5'/%3E%3Cline x1='22' y1='44' x2='98' y2='44' stroke='%2338bdf8' stroke-width='2.5'/%3E%3Crect x='34' y='56' width='22' height='28' rx='4' stroke='%2338bdf8' stroke-width='2.5' fill='none'/%3E%3Crect x='64' y='56' width='22' height='12' rx='3' stroke='%2338bdf8' stroke-width='2.5' fill='none'/%3E%3Crect x='64' y='74' width='22' height='10' rx='3' stroke='%2338bdf8' stroke-width='2.5' fill='none'/%3E%3C/svg%3E"
+                          alt="Product Capabilities & Platforms"
+                          width="120"
+                          height="120"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="projects" class="portfolio-three-area py-120 position-relative z-1">
+          <div class="portfolio-three-shape position-absolute top-0 z-n1">
+            <h3 class="portfolio-three-shape-title">works</h3>
+          </div>
+          <div class="container tw-container-1800-px">
+            <div class="row tw-mb-15">
+              <div class="col-xl-12 text-center">
+                <h2 class="tw-text-15 text-heading font-heading">Featured Projects</h2>
+                <p class="tw-text-xl text-neutral-600">Full-stack web apps, AI agents, workflow automations, and SaaS platforms</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12">
+                <div
+                  class="portfolio-three-wrapper d-flex justify-content-between flex-wrap align-items-start position-relative z-1"
+                >
+                  <!-- TODO: Project 1 — Replace TITLE, DESCRIPTION, TECH, LIVE LINK, and screenshot -->
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <!-- TODO: Replace project title and live link -->
+                          <h2 class="tw-text-605 fw-medium tw-mb-2">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="#"
+                              >1. [PROJECT TITLE — Full-Stack Web App]</a
+                            >
+                          </h2>
+                          <!-- TODO: Replace project description -->
+                          <p class="tw-text-lg text-neutral-600 tw-mb-4">
+                            [PROJECT DESCRIPTION — Brief overview of the web application, problem solved, and key features built.]
+                          </p>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <!-- TODO: Replace tech stack tags -->
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">[TECH: Next.js]</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">[TECH: Node.js]</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">[TECH: PostgreSQL]</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="portfolio-three-button">
+                          <!-- TODO: Replace href="#" with LIVE LINK -->
+                          <a
+                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                            href="#"
+                            title="Live Link"
+                            ><i class="ph ph-arrow-up-right"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="Live Demo"
+                    >
+                      <!-- TODO: Replace href="#" with LIVE LINK and src with project screenshot -->
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="#"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500' viewBox='0 0 800 500'%3E%3Crect width='800' height='500' fill='%230A0F1A'/%3E%3Crect x='24' y='24' width='752' height='452' rx='12' fill='none' stroke='%230A76DB' stroke-width='2' stroke-dasharray='8 8' opacity='0.5'/%3E%3Ctext x='400' y='240' fill='%23ffffff' font-family='Inter, sans-serif' font-size='22' font-weight='700' text-anchor='middle'%3EPROJECT 01 SCREENSHOT PLACEHOLDER%3C/text%3E%3Ctext x='400' y='275' fill='%230A76DB' font-family='Inter, sans-serif' font-size='15' font-weight='700' text-anchor='middle'%3EFull-Stack Web Application%3C/text%3E%3C/svg%3E"
+                          alt="Project 1 Placeholder"
+                          width="800"
+                          height="500"
+                          loading="lazy"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <!-- TODO: Project 2 — Replace TITLE, DESCRIPTION, TECH, LIVE LINK, and screenshot -->
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <!-- TODO: Replace project title and live link -->
+                          <h2 class="tw-text-605 fw-medium tw-mb-2">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="#"
+                              >2. [PROJECT TITLE — AI Agent / Chatbot System]</a
+                            >
+                          </h2>
+                          <!-- TODO: Replace project description -->
+                          <p class="tw-text-lg text-neutral-600 tw-mb-4">
+                            [PROJECT DESCRIPTION — Brief overview of the AI agent or custom chatbot, knowledge base / RAG pipeline, and business integration.]
+                          </p>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <!-- TODO: Replace tech stack tags -->
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">[TECH: AI Agents]</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">[TECH: React]</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">[TECH: Node.js]</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <!-- TODO: Replace href="#" with LIVE LINK -->
+                        <a
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                          href="#"
+                          title="Live Link"
+                          ><i class="ph ph-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="Live Demo"
+                    >
+                      <!-- TODO: Replace href="#" with LIVE LINK and src with project screenshot -->
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="#"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500' viewBox='0 0 800 500'%3E%3Crect width='800' height='500' fill='%230A0F1A'/%3E%3Crect x='24' y='24' width='752' height='452' rx='12' fill='none' stroke='%230A76DB' stroke-width='2' stroke-dasharray='8 8' opacity='0.5'/%3E%3Ctext x='400' y='240' fill='%23ffffff' font-family='Inter, sans-serif' font-size='22' font-weight='700' text-anchor='middle'%3EPROJECT 02 SCREENSHOT PLACEHOLDER%3C/text%3E%3Ctext x='400' y='275' fill='%230A76DB' font-family='Inter, sans-serif' font-size='15' font-weight='700' text-anchor='middle'%3EAI Agents %26 Custom Chatbots%3C/text%3E%3C/svg%3E"
+                          alt="Project 2 Placeholder"
+                          width="800"
+                          height="500"
+                          loading="lazy"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <!-- TODO: Project 3 — Replace TITLE, DESCRIPTION, TECH, LIVE LINK, and screenshot -->
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <!-- TODO: Replace project title and live link -->
+                          <h2 class="tw-text-605 fw-medium tw-mb-2">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="#"
+                              >3. [PROJECT TITLE — Workflow Automation Pipeline]</a
+                            >
+                          </h2>
+                          <!-- TODO: Replace project description -->
+                          <p class="tw-text-lg text-neutral-600 tw-mb-4">
+                            [PROJECT DESCRIPTION — Brief overview of the multi-step automation built with n8n/Make, APIs connected, and operational workflows automated.]
+                          </p>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <!-- TODO: Replace tech stack tags -->
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">[TECH: n8n]</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">[TECH: Make]</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">[TECH: REST APIs]</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <!-- TODO: Replace href="#" with LIVE LINK -->
+                        <a
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                          href="#"
+                          title="Live Link"
+                          ><i class="ph ph-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="Live Demo"
+                    >
+                      <!-- TODO: Replace href="#" with LIVE LINK and src with project screenshot -->
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="#"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500' viewBox='0 0 800 500'%3E%3Crect width='800' height='500' fill='%230A0F1A'/%3E%3Crect x='24' y='24' width='752' height='452' rx='12' fill='none' stroke='%230A76DB' stroke-width='2' stroke-dasharray='8 8' opacity='0.5'/%3E%3Ctext x='400' y='240' fill='%23ffffff' font-family='Inter, sans-serif' font-size='22' font-weight='700' text-anchor='middle'%3EPROJECT 03 SCREENSHOT PLACEHOLDER%3C/text%3E%3Ctext x='400' y='275' fill='%230A76DB' font-family='Inter, sans-serif' font-size='15' font-weight='700' text-anchor='middle'%3EWorkflow Automation (n8n / Make)%3C/text%3E%3C/svg%3E"
+                          alt="Project 3 Placeholder"
+                          width="800"
+                          height="500"
+                          loading="lazy"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <!-- TODO: Project 4 — Replace TITLE, DESCRIPTION, TECH, LIVE LINK, and screenshot -->
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <!-- TODO: Replace project title and live link -->
+                          <h2 class="tw-text-605 fw-medium tw-mb-2">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="#"
+                              >4. [PROJECT TITLE — SaaS Platform & Dashboard]</a
+                            >
+                          </h2>
+                          <!-- TODO: Replace project description -->
+                          <p class="tw-text-lg text-neutral-600 tw-mb-4">
+                            [PROJECT DESCRIPTION — Brief overview of the SaaS platform and analytics dashboard built with React/Next.js and Node.js backend APIs.]
+                          </p>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <!-- TODO: Replace tech stack tags -->
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">[TECH: Next.js]</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">[TECH: Express]</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">[TECH: MongoDB]</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <!-- TODO: Replace href="#" with LIVE LINK -->
+                        <a
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                          href="#"
+                          title="Live Link"
+                          ><i class="ph ph-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="Live Demo"
+                    >
+                      <!-- TODO: Replace href="#" with LIVE LINK and src with project screenshot -->
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="#"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500' viewBox='0 0 800 500'%3E%3Crect width='800' height='500' fill='%230A0F1A'/%3E%3Crect x='24' y='24' width='752' height='452' rx='12' fill='none' stroke='%230A76DB' stroke-width='2' stroke-dasharray='8 8' opacity='0.5'/%3E%3Ctext x='400' y='240' fill='%23ffffff' font-family='Inter, sans-serif' font-size='22' font-weight='700' text-anchor='middle'%3EPROJECT 04 SCREENSHOT PLACEHOLDER%3C/text%3E%3Ctext x='400' y='275' fill='%230A76DB' font-family='Inter, sans-serif' font-size='15' font-weight='700' text-anchor='middle'%3ESaaS Platform %26 Dashboard%3C/text%3E%3C/svg%3E"
+                          alt="Project 4 Placeholder"
+                          width="800"
+                          height="500"
+                          loading="lazy"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- What I Build Section -->
+        <div id="what-i-build" class="feature-three-area py-120 position-relative z-1 bg-black">
+          <div class="container tw-container-1800-px">
+            <div class="row tw-mb-15">
+              <div class="col-12 text-center">
+                <h2 class="tw-text-15 text-white font-heading">What I Build</h2>
+                <p class="tw-text-xl text-neutral-400">End-to-end software, AI systems, and workflow automations built for businesses and founders</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="feature-three-wrapper hover__widget">
+                  <!-- 01 Web Apps -->
+                  <div
+                    class="feature-three-single current hover__reveal-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >01</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >Web Apps</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >Full-Stack Web Applications</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >High Impact</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="assets/images/thumbs/feature-three-thumb1.jpg"
+                    ></div>
+                  </div>
+
+                  <!-- 02 AI -->
+                  <div
+                    class="feature-three-single hover__reveal-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >02</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >AI</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >AI Agents & Chatbots</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >Automation Ready</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="assets/images/thumbs/portfolio-two-thumb1.jpg"
+                    ></div>
+                  </div>
+
+                  <!-- 03 Automation -->
+                  <div
+                    class="feature-three-single hover__reveal-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >03</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >Automation</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >Workflow Automation (n8n / Make / Zapier)</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >Time Saving</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="assets/images/thumbs/portfolio-two-thumb2.jpg"
+                    ></div>
+                  </div>
+
+                  <!-- 04 SaaS -->
+                  <div
+                    class="feature-three-single hover__reveal-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >04</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >SaaS</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >SaaS Platforms & Dashboards</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >Scalable</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="assets/images/thumbs/portfolio-two-thumb3.jpg"
+                    ></div>
+                  </div>
+
+                  <!-- 05 Websites -->
+                  <div
+                    class="feature-three-single hover__reveal-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >05</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >Websites</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >Business Websites & Landing Pages</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >Conversion Focused</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="assets/images/thumbs/portfolio-two-thumb4.jpg"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer / Contact Section -->
+        <section
+          id="contact"
+          class="footer-three-area pt-120 tw-pb-10 position-relative z-1 bg-black"
+        >
+          <div class="container tw-container-1800-px">
+            <div class="row pb-120 justify-content-center text-center">
+              <div class="col-xl-8 col-lg-10">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  <span class="text-main-two-600 text-uppercase fw-bold tracking-wider tw-text-sm border border-neutral-800 tw-px-4 tw-py-2 tw-rounded-md">WORK WITH ME</span>
+                  <h2 class="tw-text-15 text-white font-heading tw-mt-4 tw-mb-4">Let's Build Something Great Together</h2>
+                  <p class="tw-text-xl text-neutral-400 tw-mb-10">Hire me on Upwork or explore my code repositories and professional profile on GitHub and LinkedIn.</p>
+                  
+                  <div class="d-flex align-items-center justify-content-center flex-wrap tw-gap-4">
+                    <!-- TODO: Replace href="#" with actual Upwork profile URL -->
+                    <a class="tw-text-lg text-white bg-main-two-600 border border-main-two-600 tw-px-6 tw-py-4 tw-rounded-lg d-inline-flex align-items-center tw-gap-3 hover-bg-neutral-900 hover-border-main-two-600 tw-transition-3" href="#">
+                      <i class="ph ph-briefcase tw-text-2xl"></i> <span class="fw-semibold">View my work on Upwork</span>
+                    </a>
+                    <a class="tw-text-lg text-white bg-neutral-900 border border-neutral-800 tw-px-6 tw-py-4 tw-rounded-lg d-inline-flex align-items-center tw-gap-3 hover-border-main-two-600 hover-bg-main-two-600 tw-transition-3" href="https://github.com/ahmedmoosaadnan" target="_blank" rel="noopener noreferrer">
+                      <i class="ph ph-github-logo tw-text-2xl"></i> <span class="fw-semibold">GitHub</span>
+                    </a>
+                    <a class="tw-text-lg text-white bg-neutral-900 border border-neutral-800 tw-px-6 tw-py-4 tw-rounded-lg d-inline-flex align-items-center tw-gap-3 hover-border-main-two-600 hover-bg-main-two-600 tw-transition-3" href="https://www.linkedin.com/in/ahmed-moosa-adnan" target="_blank" rel="noopener noreferrer">
+                      <i class="ph ph-linkedin-logo tw-text-2xl"></i> <span class="fw-semibold">LinkedIn</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-three-border tw-px-18 tw-mb-10">
+            <div class="container-fluid gx-0">
+              <div class="row">
+                <div class="col-xl-12">
+                  <div
+                    class="footer-three-middile d-flex align-items-center justify-content-between"
+                  >
+                    <div
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <h4 class="tw-text-2xl text-white tw-mb-2">
+                        Quick Links
+                      </h4>
+                      <ul class="d-flex tw-gap-4 flex-wrap list-unstyled">
+                        <li>
+                          <a class="tw-text-lg text-white" href="#about">About Me</a>
+                        </li>
+                        <li>
+                          <a class="tw-text-lg text-white" href="#expertise">Expertise</a>
+                        </li>
+                        <li>
+                          <a class="tw-text-lg text-white" href="#projects">Projects</a>
+                        </li>
+                        <li>
+                          <a class="tw-text-lg text-white" href="#what-i-build">What I Build</a>
+                        </li>
+                        <li>
+                          <a class="tw-text-lg text-white" href="#contact">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="300"
+                    >
+                      <a
+                        class="footer-three-back-to-top tw-w-170 tw-h-170 lh-1 d-inline-flex justify-content-center align-items-center bg-main-two-600 text-white tw-text-3xl rounded-circle"
+                        href="#"
+                        ><i class="ph ph-arrow-up"></i
+                      ></a>
+                    </div>
+                    <div
+                      class="text-lg-end"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="400"
+                    >
+                      <h4 class="tw-text-2xl text-white tw-mb-2">
+                        Devoxis · Ahmed Moosa
+                      </h4>
+                      <p class="tw-text-lg text-white">
+                        © 2026 Devoxis · Ahmed Moosa. All rights reserved.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="container tw-container-1800-px">
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="footer-three-bottom">
+                    <h5 class="footer-three-bottom-title text-white text-center">
+                      DEVOXIS
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="position-absolute top-0 start-0 z-n1"
+              src="assets/images/shapes/footer-three-bg-shape.png"
+              alt="shape"
+              width="1920"
+              height="1263"
+              loading="lazy"
+            />
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Jquery js -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- phosphor Js -->
+    <script src="assets/js/phosphor-icon.js"></script>
+    <!-- Bootstrap Bundle Js -->
+    <script src="assets/js/boostrap.bundle.min.js"></script>
+    <!-- aos -->
+    <script src="assets/js/aos.js"></script>
+    <!-- magnific popup js -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- marquee -->
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <!-- counterup js -->
+    <script src="assets/js/purecounter.js"></script>
+    <!-- swiper bundle js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- gsap js -->
+    <script src="assets/js/gsap/gsap.js"></script>
+    <!-- Scroll plugin -->
+    <script src="assets/js/gsap/gsap-scroll-to-plugin.js"></script>
+    <!-- Scroll smoother -->
+    <script src="assets/js/gsap/gsap-scroll-smoother.js"></script>
+    <!-- Scroll Trigger -->
+    <script src="assets/js/gsap/gsap-scroll-trigger.js"></script>
+    <!-- split text -->
+    <script src="assets/js/gsap/gsap-split-text.js"></script>
+    <!-- chroma js -->
+    <script src="assets/js/gsap/chroma.min.js"></script>
+
+    <!-- custom GSAP -->
+    <script src="assets/js/slider-active.js"></script>
+    <!-- custom GSAP -->
+    <script src="assets/js/custom-gsap.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+    <!-- cursor js -->
+    <script src="assets/js/tw-cursor.js"></script>
+  </body>
+</html>
