@@ -56,6 +56,9 @@
       normalizeScroll: false,
       ignoreMobileResize: true,
     });
+    if (typeof AOS !== "undefined") {
+      AOS.refresh();
+    }
   }
 
   ////////////////////////////////////////////////////
